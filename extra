@@ -29,3 +29,23 @@ React     > Frontend
 
 extension
 > vscode-icon
+> live server
+
+Tags
+html 
+* This is the main tag
+head
+* linking
+* css, javascript
+body
+* All the content that is visible to us
+
+block level
+> Always start from new line 
+> Occupy the whole width of the screen
+> p ,div, header
+
+inline element
+> Start in the same line
+> only occupy the space which is required
+> a, img, span
