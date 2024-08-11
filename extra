@@ -49,3 +49,44 @@ inline element
 > Start in the same line
 > only occupy the space which is required
 > a, img, span
+
+
+profile
+---------------
+Name
+Profile Image
+Something about you
+Tech stack
+Hobbies
+Map
+Socail Media Link
+
+
+inline>styletag>stylesheet
+
+inline
+{
+    height:50px;
+    background-color:red
+}
+styletag
+{
+    height:70px;
+    font-size:30px;
+    width:90px;
+}
+
+stylesheet
+{
+    width:100px;
+    bacground-color:green;
+    display:flex
+}
+
+{
+   height:50px;
+   background-color:red;
+   font-size:30px;
+   width:90px;
+   display:flex
+}
