@@ -90,3 +90,18 @@ stylesheet
    width:90px;
    display:flex
 }
+
+tag name
+h1{
+    
+}
+
+class
+> when we want to assign same property to multiple element
+> .
+
+
+id
+> #
+> should be used for only one element at a time
+

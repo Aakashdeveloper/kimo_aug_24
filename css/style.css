@@ -1,0 +1,25 @@
+#heading{
+    text-align:center
+}
+#gray{
+    background:lightgrey
+}
+
+.card{
+    height:400px;
+    width:20%;
+    background:lightblue;
+    float:left;
+    margin-left:3%;
+    overflow: scroll;
+}
+
+.pink{
+    background:lightcoral
+}
+
+
+
+.card > img{
+    width:100%;height:200px
+}
