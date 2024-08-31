@@ -82,14 +82,87 @@ select{
 
 /*quickSearch Css*/
 #quickSearch{
-    height:600px;
-    border:10px double orange
+    /* height:600px; */
+    width:80%;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+
+.quickHeading{
+    font-size: 30px;
+    color:#3b2632;
+    font-weight: bold;
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 2%;
+}
+
+.quickSubHeading{
+    font-size: 20px;
+    color:gray;
+    line-height: 2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 2%;
+}
+#tileBox{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.tileContainer{
+    height:180px;
+    width:30%;
+    margin-top:3% ;
+    margin-left: 2%;
+    display: flex;
+    box-shadow: 20px 20px 10px #280b28;
+}
+
+.tileComponent1{
+    height:100%;
+    width:52%;
+}
+
+.tileComponent1 >img{
+    height:100%;
+    width:100%
+}
+.tileComponent2{
+    height:100%;
+    width:45%;
+    margin-left: 3%;
+}
+
+.compHeading{
+    font-size: 25px;
+    font-weight: bold;
+    color:#3b2632;
+}
+.compSubHeading{
+    font-size: 20px;
+    color:gray;
 }
 
 /*footer Css*/
 footer{
-    height: 60px;
-    border:10px
-    
-    dotted purple
+    background-color: #3b2632;
+    text-align: center;
+    color:white
+}
+
+.footDiv{
+    display: inline-block;
+    width:32%;
+    border-right: 2px solid white;
+}
+
+.noBorder{
+    border:none
+}
+
+ul{
+    list-style-type: none;
 }
