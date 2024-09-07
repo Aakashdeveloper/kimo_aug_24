@@ -1,0 +1,45 @@
+#first{
+    height:200px;
+    background-color: aquamarine;
+}
+#second{
+    height:200px;
+    background-color: rgb(255, 144, 127);
+}
+#third{
+    height:200px;
+    background-color: rgb(246, 255, 127);
+}
+#fourth{
+    height:200px;
+    background-color: rgb(142, 255, 127);
+}
+#fifth{
+    height:200px;
+    background-color: rgb(127, 178, 255);
+}
+#sixth{
+    height:200px;
+    background-color: rgb(212, 127, 255);
+}
+#seventh{
+    height:200px;
+    background-color: rgb(252, 40, 47);
+}
+.btn-brown{
+    background-color: brown !important;
+}
+
+.edit{
+    font-size: 20px;
+    color:green
+}
+.delete{
+    font-size: 20px;
+    color:red
+}
+
+.sliderImage{
+    height:400px !important;
+    width: 100%;
+}
