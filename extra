@@ -136,6 +136,7 @@ function
 dom
 calc
 darklight
+
 coupon
 stringopt
 mathopt
@@ -143,3 +144,7 @@ loop
 object
 clouser
 hoisting
+
+
+
+eval()

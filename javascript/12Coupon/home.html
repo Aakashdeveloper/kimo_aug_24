@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="home.css"/>
+        <script src="home.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="brand">
+                Developer Funnel
+            </div>
+            <div id="social">
+                <a href="#">
+                    <img src="images/facebook.png" alt="fb" class="socialIcon"/>
+                </a>
+                <a href="#">
+                    <img src="images/insta.png" alt="fb" class="socialIcon"/>
+                </a>
+                <a href="#">
+                    <img src="images/youtube1.png" alt="fb" class="socialIcon"/>
+                </a>
+            </div>
+        </header>
+        <!--Search Section-->
+        <div id="search">
+            <div id="coupon">
+                <button onClick="closeCoupon()">&times;</button>
+            </div>
+            <div class="logo">
+                <span>D!</span>
+            </div>
+            <div id="heading">
+                Find Best Place Near You
+            </div>
+            <div class="dropdown">
+                <select>
+                    <option>-----SELECT YOUR CITY-----</option>
+                    <option>Delhi</option>
+                    <option>Mumbai</option>
+                </select>
+                <select id="restSelect">
+                    <option>-----SELECT YOUR RESTAURANT-----</option>
+                    <option>Wow Momos</option>
+                    <option>Pret A Manager</option>
+                </select>
+            </div>
+        </div>
+        <!--Quick Search Section-->
+        <div id="quickSearch">
+            <span class="quickHeading">Quick Search</span>
+            <span class="quickSubHeading">Find Restaurants By MealType</span>
+            <div id="tileBox">
+                <div class="tileContainer">
+                    <div class="tileComponent1">
+                        <img src="images/dinner.png" alt="drinks"/>
+                    </div>
+                    <div class="tileComponent2">
+                        <p class="compHeading"> BreakFast</p>
+                        <p class="compSubHeading"> Best Deal For BreakFast</p>
+
+                    </div>
+                </div>
+                <div class="tileContainer">
+                    <div class="tileComponent1">
+                        <img src="images/snacks.png" alt="drinks"/>
+                    </div>
+                    <div class="tileComponent2">
+                        <p class="compHeading"> BreakFast</p>
+                        <p class="compSubHeading"> Best Deal For BreakFast</p>
+
+                    </div>
+                </div>
+                <div class="tileContainer">
+                    <div class="tileComponent1">
+                        <img src="images/dinner.png" alt="drinks"/>
+                    </div>
+                    <div class="tileComponent2">
+                        <p class="compHeading"> BreakFast</p>
+                        <p class="compSubHeading"> Best Deal For BreakFast</p>
+
+                    </div>
+                </div>
+                <div class="tileContainer">
+                    <div class="tileComponent1">
+                        <img src="images/nightlife.png" alt="drinks"/>
+                    </div>
+                    <div class="tileComponent2">
+                        <p class="compHeading"> BreakFast</p>
+                        <p class="compSubHeading"> Best Deal For BreakFast</p>
+
+                    </div>
+                </div>
+                <div class="tileContainer">
+                    <div class="tileComponent1">
+                        <img src="images/lunch.png" alt="drinks"/>
+                    </div>
+                    <div class="tileComponent2">
+                        <p class="compHeading"> BreakFast</p>
+                        <p class="compSubHeading"> Best Deal For BreakFast</p>
+
+                    </div> 
+                </div>
+                <div class="tileContainer">
+                    <div class="tileComponent1">
+                        <img src="images/drinks.png" alt="drinks"/>
+                    </div>
+                    <div class="tileComponent2">
+                        <p class="compHeading"> BreakFast</p>
+                        <p class="compSubHeading"> Best Deal For BreakFast</p>
+
+                    </div>
+                </div>
+                
+              
+            </div>
+        </div>
+        <!--Footer Section-->
+        <footer>
+            <hr/>
+            <p class="footText">&copy; Developer Funnel 2024</p>
+            <hr/>
+            <div class="footDiv">
+                <ul>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="footDiv">
+                <ul>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="footDiv noBorder">
+                <ul>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+        </footer>
+        <script>
+            window.onload=loadCoupon()
+        </script>
+    </body>
+</html>

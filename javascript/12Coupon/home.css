@@ -1,0 +1,280 @@
+body{
+    margin:auto
+}
+a{
+    text-decoration: none;
+}
+/*Header Css*/
+header{
+    height:60px;
+    /* border:5px solid red; */
+    background-color: #3b2632;
+}
+
+#brand{
+    float: left;
+    color:white;
+    font-size:30px;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+#social{
+    float: right;
+}
+.socialIcon{
+    height:50px
+}
+
+/*search Css*/
+#search{
+    height:450px;
+    /* border:10px groove green; */
+    background-image:url('images/food-wallpaper.png');
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: 100% 450px
+}
+
+.logo{
+    height:150px;
+    width:150px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 44%;
+    margin-top: 2%;
+    position: absolute;
+    font-size: 90px;
+    animation: revolve 10s infinite;
+}
+
+@keyframes revolve{
+    0%{
+        margin-left: 2%;
+        transform: rotate(30deg);
+    }
+    25%{
+        margin-left: 20%;
+        transform: rotate(90deg);
+    }
+    50%{
+        margin-left: 40%;
+        transform: rotate(180deg);
+    }
+    75%{
+        margin-left: 80%;
+        transform: rotate(270deg);
+    }
+    100%{
+        margin-left: 40%;
+        transform: rotate(360deg);
+    }
+}
+
+.logo>span{
+    margin-left: 20%;
+    margin-top: 13%;
+    position: absolute;
+}
+
+#heading{
+    font-size: 60px;
+    color: white;
+    margin-left: 32%;
+    margin-top: 14%;
+    position: absolute;
+}
+
+.dropdown{
+    height: 60px;
+    width:50%;
+    /* border: 2px solid white; */
+    margin-left: 30%;
+    margin-top: 22%;
+    position: absolute;
+}
+
+select{
+    height:60px;
+    width:40%;
+    font-size: 20px;
+    text-align: center;
+}
+#restSelect{
+    width:59%;
+}
+
+/*quickSearch Css*/
+#quickSearch{
+    /* height:600px; */
+    width:80%;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+
+.quickHeading{
+    font-size: 30px;
+    color:#3b2632;
+    font-weight: bold;
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 2%;
+}
+
+.quickHeading:hover{
+    font-size: 40px;
+}
+
+.quickSubHeading{
+    font-size: 20px;
+    color:gray;
+    line-height: 2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 2%;
+}
+#tileBox{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.tileContainer{
+    height:180px;
+    width:30%;
+    margin-top:3% ;
+    margin-left: 2%;
+    display: flex;
+    box-shadow: 20px 20px 10px #280b28;
+    animation: dance 10s infinite
+}
+
+@keyframes dance {
+    0%{
+        transform: rotate(-5deg);
+    }
+    25%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(5deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-5deg);
+    }
+    
+}
+
+
+.tileContainer:hover{
+    transform: scale(1.1);
+    /* transform: skewx(40deg)
+    transform: rotate(180deg) */
+    /* transform: translate(100px, 200px) */
+}
+
+.tileComponent1{
+    height:100%;
+    width:52%;
+}
+
+.tileComponent1 >img{
+    height:100%;
+    width:100%
+}
+.tileComponent2{
+    height:100%;
+    width:45%;
+    margin-left: 3%;
+}
+
+.compHeading{
+    font-size: 25px;
+    font-weight: bold;
+    color:#3b2632;
+}
+.compSubHeading{
+    font-size: 20px;
+    color:gray;
+}
+
+/*footer Css*/
+footer{
+    background-color: #3b2632;
+    text-align: center;
+    color:white
+}
+
+.footDiv{
+    display: inline-block;
+    width:32%;
+    border-right: 2px solid white;
+}
+
+.noBorder{
+    border:none
+}
+
+ul{
+    list-style-type: none;
+}
+
+#coupon{
+    height:300px;
+    width:600px;
+    background-color: gray;
+    opacity: 0.9;
+    margin-left: 30%;
+    margin-top: 5%;
+    position: absolute;
+    z-index:5;
+    visibility: hidden;
+}
+
+
+@media screen and (max-width:1600px){
+    body{
+        background-color: skyblue;
+    }
+}
+
+@media screen and (max-width:1400px){
+    body{
+        background-color: rgb(171, 248, 230);
+    }
+}
+
+@media screen and (max-width:1200px){
+    body{
+        background-color: rgb(248, 196, 171);
+    }
+}
+
+
+@media screen and (max-width:1088px){
+    body{
+        background-color: rgb(247, 248, 171);
+    }
+    .tileContainer{
+        width:45%
+    }
+}
+
+@media screen and (max-width:800px){
+    body{
+        background-color: rgb(171, 171, 248);
+    }
+    .tileContainer{
+        width:80%
+    }
+}
+
+@media screen and (max-width:550px){
+    body{
+        background-color: rgb(248, 171, 229);
+    }
+}
