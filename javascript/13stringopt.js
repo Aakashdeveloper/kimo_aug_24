@@ -39,3 +39,11 @@ var city = "pAriS"
 undefined
 city.charAt(0).toUpperCase()+city.slice(1).toLowerCase()
 'Paris'
+
+
+var uname = "   Nikita  "
+undefined
+uname.length
+11
+uname.trim()
+'Nikita'
