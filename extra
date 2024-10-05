@@ -136,14 +136,21 @@ function
 dom
 calc
 darklight
-
 coupon
 stringopt
 mathopt
+array
 loop
+mapfilter
+geolocation
+
 object
+setInterval/setTimeout
 clouser
 hoisting
+storage
+rest
+spread
 
 
 

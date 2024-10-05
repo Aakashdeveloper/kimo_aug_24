@@ -98,3 +98,15 @@ city.splice(1,1,'Indore','Keev')
 ['Delhi']
 city
 (5) ['Boston', 'Indore', 'Keev', 'Innsburg', 'Amsterdam']
+
+
+let a = ['Boston', 'Delhi', 'Innsburg', 'Mumbai', 'Amsterdam']
+undefined
+a.indexOf('Mumbai')
+3
+a.indexOf('Boston')
+0
+a.indexOf('London')
+-1
+a.indexOf('Pune')
+-1
