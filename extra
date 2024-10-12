@@ -143,7 +143,6 @@ array
 loop
 mapfilter
 geolocation
-
 object
 setInterval/setTimeout
 clouser
@@ -155,3 +154,12 @@ spread
 
 
 eval()
+
+single thread
+async 
+non blocking I/O
+
+
+npm
+package.json
+node inbulit
