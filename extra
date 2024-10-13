@@ -160,6 +160,28 @@ async
 non blocking I/O
 
 
-npm
+npm > Node package manager
 package.json
+> Enter point to the app
+> First filet that run
+> Contains all the packages we are using in app
+> commands (start,build,test)
 node inbulit
+
+
+* Step to generate package.json *
+ ** nodejs must be installed in laptop
+ > open terminal and go inside folder
+ > type "npm init"
+ > Answer all question
+ > Type "yes"
+
+
+* Step to install packages *
+ ** nodejs must be installed in laptop
+ > open terminal and go inside folder
+ > npm install packagename / npm i packagename
+
+
+ package-lock > have dependency tree
+ node_modules > contains all the dependency in folder
