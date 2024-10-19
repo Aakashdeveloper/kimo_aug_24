@@ -185,3 +185,15 @@ node inbulit
 
  package-lock > have dependency tree
  node_modules > contains all the dependency in folder
+
+
+ //global package
+ > useful before app start
+ > open cmd as admin
+ > npm i -g nodemon
+
+
+ C > Create (POST)
+ R > Read   (GET)
+ U > Update (PUT)
+ D > Delete (DELETE)
