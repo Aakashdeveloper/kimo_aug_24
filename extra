@@ -197,3 +197,98 @@ node inbulit
  R > Read   (GET)
  U > Update (PUT)
  D > Delete (DELETE)
+
+
+
+ SQL 
+> Postgresql
+> mysql
+> database
+> table
+> row
+
+
+
+
+ NoSQL
+ > Mongo
+ > database
+ > collection
+ > document
+
+
+
+ Roll No | Hindi | English | Computer
+    1    |  85   |         |
+    2    |       |   75    |
+    3    |  90   |         |  90
+
+
+Mongo
+[
+    {
+        rollNo:1,
+        Hindi:85
+    },
+    {
+        rollNo:2,
+        English:75
+    },
+    {
+        rollNo:3,
+        Hindi:90,
+        computer:90
+    }
+]
+
+
+> https://cloud.mongodb.com/
+
+
+_id
+Primary key
+unique
+bydefault generate
+
+
+//mongod --config /usr/local/etc/mongod.conf --fork
+
+
+
+
+Signup> https://cloud.mongodb.com/
+Download > https://www.mongodb.com/try/download/compass
+
+Database > Clusters > Create
+Shared> aws > mumbai
+M0 Sandbox
+Click Create Cluster
+
+
+>>>>>>>>>>>>
+Connect
+> Drivers
+> mongodb+srv://<username>:<password>@cluster0.f8vmc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+
+>>>>>>>>>>>>>>>
+Database Access
+> Add New Database User
+> Password 
+Provide any username >> aakash
+Autogenerate password>> 
+
+Built-in Role
+> Atlas Admin
+> Add User
+
+
+>>>>>>>>>>>>>>>
+Network Access
+> Add IP Address
+> Access List Entry: 0.0.0.0/0
+> Confirm
+
+
+
+mongodb+srv://<username>:<password>@cluster0.f8vmc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
