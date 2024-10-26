@@ -292,3 +292,15 @@ Network Access
 
 
 mongodb+srv://<username>:<password>@cluster0.f8vmc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+param
+> What we pass after /
+> We need to define param in code
+> it is complusory to pass
+
+queryParam
+> what we pass after ?
+> no need to define in code
+> not complusory to pass
+
+

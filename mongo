@@ -1,0 +1,14 @@
+# see all dbs
+> show dbs
+
+#go inside dbs
+> use database name
+
+#collection in dbs
+> show collections
+
+#see all data in collection
+> db.collectionName.find()
+
+# find data on basis of condition
+> db.restaurants.find({state_id:3})
