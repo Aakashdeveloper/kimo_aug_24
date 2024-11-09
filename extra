@@ -315,3 +315,26 @@ a-f
 
 cors
 cross origin resource sharing
+
+////react
+npx create-react-app appname
+
+
+React is frontend libraray which help to make single page application
+using component based structure
+
+
+React  is the main package
+ReactDOM > Help to load the content on the screen
+ReactScript> Will help to run the application
+
+State
+> Any Data interaction happen through state
+> With every state change component will rerender
+> Every component will have its own state
+
+Props
+> if we have to share state between component
+
+////Hooks///
+useState > help to mainatin state in component
