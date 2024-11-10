@@ -1,0 +1,19 @@
+footer{
+    background-color: #3b2632;
+    text-align: center;
+    color:white
+}
+
+.footDiv{
+    display: inline-block;
+    width:32%;
+    border-right: 2px solid white;
+}
+
+.noBorder{
+    border:none
+}
+
+ul{
+    list-style-type: none;
+}
