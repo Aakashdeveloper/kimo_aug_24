@@ -361,3 +361,6 @@ useState > help to mainatin state in component
 
 
 npm i react-router-dom
+
+
+npm i -g json-server

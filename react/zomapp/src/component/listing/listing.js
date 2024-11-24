@@ -15,6 +15,7 @@ const Listing = () => {
     const [restList, setRestList] = useState();
 
     useEffect(() => {
+        sessionStorage.setItem('mealId',mealId)
         axios.get(`${url}/restaurant?mealtype_id=${mealId}`)
         .then((res) => {
             setRestList(res.data) 
