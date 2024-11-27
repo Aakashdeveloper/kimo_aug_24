@@ -23,6 +23,7 @@ const ListingDisplay = (props) => {
                                     </div>
                                     <div className='city_name'>{item.address}</div>
                                     <div className='city_name'>{item.rating_text}</div>
+                                    <div className='city_name'>Rs. {item.cost}</div>
                                     <div className='labelDiv'>
                                         <span className='label label-primary'>
                                             {item.mealTypes[0].mealtype_name}
