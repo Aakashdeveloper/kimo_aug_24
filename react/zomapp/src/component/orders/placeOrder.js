@@ -16,11 +16,11 @@ const PlaceOrder = () => {
         name:"Nikita",
         email:"nikki@gmail.com",
         cost:Math.floor(Math.random()*(2000-500)+500),
-        phone:"88488322",
+        phone:"",
         address:'Hno 239 Nodia'
     }
 
-    const [value,setValue] = useState(initialValue)
+    const [values,setValue] = useState(initialValue)
 
     const checkout = () => {
         fetch(order,{
@@ -29,7 +29,7 @@ const PlaceOrder = () => {
                 'accept':'application/json',
                 'Content-Type':'application/json'
             },
-            body:JSON.stringify(value)
+            body:JSON.stringify(values)
         })
         .then(navigate('/viewOrder'))
 
@@ -38,7 +38,7 @@ const PlaceOrder = () => {
     const handleInputChange = (e) => {
         const {name,value} = e.target;
         setValue({
-            ...value,[name]:value
+            ...values,[name]:value
         })
     }
 
@@ -47,7 +47,7 @@ const PlaceOrder = () => {
             <div className='container'>
                 <div className='panel panel-primary'>
                     <div className="panel panel-heading">
-                        <h3>Order for Restaurant {value.rest_name} </h3>
+                        <h3>Order for Restaurant {values.rest_name} </h3>
                     </div>
                     <div className='panel panel-body'>
                         <div class="row">
@@ -55,42 +55,42 @@ const PlaceOrder = () => {
                                 <div class="form-group">
                                     <label htmlFor="email">OrderId</label>
                                     <input className="form-control" id="oid"
-                                    name="orderId" value={value.orderId} readOnly/>
+                                    name="orderId" value={values.orderId} readOnly/>
                                 </div>
                                 
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="name">Name</label>
+                                    <label htmlFor="name">Name</label>
                                     <input class="form-control" id="name"
-                                     name="name" value={value.name}
+                                     name="name" value={values.name}
                                      onChange={handleInputChange}
                                     />
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="name">Email</label>
-                                    <input class="form-control" id="name"
-                                     name="email" value={value.email}
+                                    <label htmlFor="email">Email</label>
+                                    <input class="form-control" id="email"
+                                     name="email" value={values.email}
                                      onChange={handleInputChange}
                                     />
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="name">Phone</label>
-                                    <input class="form-control" id="name"
-                                     name="phone" value={value.phone}
+                                    <label htmlFor="phone">Phone</label>
+                                    <input class="form-control" id="phone"
+                                     name="phone" value={values.phone}
                                      onChange={handleInputChange}
                                     />
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="name">Address</label>
-                                    <input class="form-control" id="name"
-                                     name="address" value={value.address}
+                                    <label htmlFor="address">Address</label>
+                                    <input class="form-control" id="address"
+                                     name="address" value={values.address}
                                      onChange={handleInputChange}
                                     />
                                 </div>
@@ -99,7 +99,7 @@ const PlaceOrder = () => {
                         </div>
                         <div className='row'>
                             <div className='col-md-12'>
-                                <h2>Total Price is Rs.{value.cost}</h2>
+                                <h2>Total Price is Rs.{values.cost}</h2>
                             </div>
                         </div>
                         <button className='btn btn-success' onClick={checkout}>

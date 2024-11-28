@@ -364,3 +364,14 @@ npm i react-router-dom
 
 
 npm i -g json-server
+
+
+npm i bcryptjs cors express jsonwebtoken mongoose
+
+JWT > Json Web Token
+
+Authentication
+> Your Username and password is correct
+
+Authorisition
+> What access you have
