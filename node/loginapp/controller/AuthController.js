@@ -12,5 +12,48 @@ router.get('/users',async(req,res) => {
     res.send(response)
 })
 
+router.post('/register',async(req,res) => {
+    let hashpassword = bcrypt.hashSync(req.body.password,8);
+    await User.create({
+        name:req.body.name,
+        email:req.body.email,
+        password:hashpassword,
+        phone:req.body.phone,
+        role:req.body.role?req.body.role:'User'
+    })
+
+    res.send('Registration Success')
+
+})
+router.post('/login',async(req,res) => {
+    let data = await User.findOne({email:req.body.email})
+    if(!data){
+        res.send({auth:false,token:'No User Found Register First'})
+    }else{
+        const passIsValid = bcrypt.compareSync(req.body.password,data.password)
+        if(!passIsValid){
+            res.send({auth:false,token:'Invalid Password'})
+        }
+        //generate token
+        let token = jwt.sign({id:data._id},config.secert,{expiresIn:86400})
+        res.send({auth:true,token:token})
+    }
+
+})
+
+//userinfo
+router.get('/userInfo',async(req,res) => {
+    let token = req.headers['x-access-token'];
+    if(!token){
+        res.send({auth:false,token:'No Token Found'})
+    }
+    jwt.verify(token,config.secert,async(err,data) => {
+        if(err){
+            return res.send({auth:false,token:'Invalid Token Found'})
+        }
+        let output = await User.findById(data.id)
+        res.send(output)
+    })
+})
 
 module.exports = router

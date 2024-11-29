@@ -6,7 +6,7 @@ const cors = require('cors');
 
 app.use(cors());
 
-app.length('/',(req,res) => {
+app.get('/',(req,res) => {
     res.send('ok')
 })
 
