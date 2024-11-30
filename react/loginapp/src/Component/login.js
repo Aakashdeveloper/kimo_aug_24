@@ -1,8 +1,46 @@
 import React,{useEffect,useState} from 'react';
+import {useNavigate} from 'react-router-dom';
+import axios from 'axios';
+
+const lurl = "http://127.0.0.1:6001/api/auth/login"
 
 const Login = () => {
+
+    const navigate = useNavigate();
+    const [formData,setFormData] = useState({
+        email:"manvi@gmail.com",
+        password:"12345678"
+    })
+
+    const [message,setMessage] = useState()
+
+    const handleChange = (event) => {
+        const {name,value} = event.target;
+        setFormData(prevData => ({
+            ...prevData, [name]:value
+        }))
+    }
+
+    const handleSubmit = () => {
+        axios.post(lurl, formData,{
+            headers:{
+                'Accept':'application/json',
+                'Content-Type':'application/json'
+            }
+        })
+        .then((res) => {
+            console.log(res.data)
+            if(res.data.auth === false){
+                setMessage(res.data.token)
+            }else{
+                sessionStorage.setItem('ltk',res.data.token)
+                navigate('/profile')
+            }
+        })
+    }
+
     return(
-<>
+    <>
        <div className='container'>
            <div className='panel panel-success'>
                <div className='panel-heading'>

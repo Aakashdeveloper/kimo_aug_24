@@ -1,8 +1,43 @@
 import React,{useEffect,useState} from 'react';
+import {useNavigate} from 'react-router-dom';
+import axios from 'axios';
+
+const lurl = "http://127.0.0.1:6001/api/auth/register"
 
 const Register = () => {
+
+    const navigate = useNavigate();
+    const [formData,setFormData] = useState({
+        name:"",
+        email:"",
+        password:"",
+        phone:"",
+        role:""
+    })
+
+    const handleChange = (event) => {
+        const {name,value} = event.target;
+        setFormData(prevData => ({
+            ...prevData, [name]:value
+        }))
+    }
+
+    const handleSubmit = () => {
+        axios.post(lurl, formData,{
+            headers:{
+                'Accept':'application/json',
+                'Content-Type':'application/json'
+            }
+        })
+        .then((res) => {
+            navigate('/')
+        })
+    }
+
+
+
     return(
-<>
+    <>
        <div className='container'>
            <div className='panel panel-primary'>
                <div className='panel-heading'>
